@@ -1,0 +1,89 @@
+
+ 
+      
+  
+   <div class="container" align="center">
+       <form class="formfondo" >
+
+        <div class="form-group row">
+          <label for="inputCedula" class="col-sm-2 col-form-label">Cedula</label>
+          <div class="col-sm-10">
+            <input type="cedula" class="form-control" id="inputCedula" placeholder="">
+         
+          </div>
+        </div><br>
+                         
+                   <div class="form-group row">
+               <label for="inputNombre" class="col-sm-2 col-form-label">Nombre</label>
+               <div class="col-sm-10">
+                 <input type="name" class="form-control" id="inputNombre" placeholder="">
+              
+               </div>
+             </div><br>
+             <div class="form-group row">
+               <label for="inputApellidos" class="col-sm-2 col-form-label">Apellidos</label>
+               <div class="col-sm-10">
+                 <input type="apellidos" class="form-control" id="inputApellidos" placeholder="">
+              
+               </div>
+             </div><br>
+             <div class="form-group row">
+               <label for="inputCelular" class="col-sm-2 col-form-label">Celular</label>
+               <div class="col-sm-10">
+                 <input type="Celular" class="form-control" id="inputCelular" placeholder="">
+              
+               </div>
+             </div><br>
+             <div class="form-group row">
+               <label for="inputCorreo" class="col-sm-2 col-form-label">Correo</label>
+               <div class="col-sm-10">
+                 <input type="correo" class="form-control" id="inputCorreo" placeholder="">
+              
+               </div>
+             </div><br>
+   
+             <div class="form-group row">
+               <label for="inputDireccion" class="col-sm-2 col-form-label">Direccion</label>
+               <div class="col-sm-10">
+                 <input type="direccion" class="form-control" id="inputDireccion" placeholder="">
+              
+               </div>
+             </div><br>
+          
+             <div class="form-group row">
+               <label for="inputUsuario" class="col-sm-2 col-form-label">Usuario</label>
+               <div class="col-sm-10">
+                 <input type="usuario" class="form-control" id="inputUsuario" placeholder="">
+              
+               </div>
+             </div><br>
+             <div class="form-group row">
+               <label for="inputPassword" class="col-sm-2 col-form-label">Clave</label>
+               <div class="col-sm-10">
+                 <input type="password" class="form-control" id="inputPassword" placeholder="">
+              
+               </div>
+             </div>
+           <br>
+           <div align="center">
+                
+            <button (click)="SaveClientes()" class="btn btn-outline-secondary" style="margin-left: 10px;">
+              Guardar</button>
+              <button class="btn btn-outline-secondary" onclick="location.href='http://localhost:4200/'" type="button"style="margin-left: 10px;">
+                Cancelar</button>
+              
+<!-- Toolbar  
+               <a class="btn btn-outline-secondary"style="margin-left: 10px;" href="http://localhost:4200/" onclick="return confirm('Confirma sus datos?')">Guardar</a>
+            
+           <button class="btn btn-outline-secondary" onclick="location.href='http://localhost:4200/'" type="button"style="margin-left: 10px;">
+               Cancelar</button>
+              -->  
+                   
+         
+          
+           </div>
+           <br> 
+         </form>
+   
+   </div>
+   <app-footer></app-footer>
