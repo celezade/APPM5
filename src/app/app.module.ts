@@ -9,6 +9,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './menu/menu.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { invokeInstruction } from '@angular/compiler/src/render3/view/util';
+import { InterpolationConfig } from '@angular/compiler';
 
 
 
@@ -29,8 +31,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
-   
+    FormsModule   
     
   ],
   providers: [],
