@@ -22,4 +22,15 @@ ClientesList:Clientes[]=[];
   
     }
 
+    Eliminar(cedula:String ){
+      this.servicioservice.EliminarClientes(cedula).subscribe(response =>{
+        alert("Registro Eliminado");
+      })
+
+    }
+
+
+   
+
+
 }

@@ -1,5 +1,4 @@
-export interface Clientes{
-   
+export class Clientes{
         id:string;
         cedula:string;
         name:string;

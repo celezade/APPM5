@@ -13,14 +13,21 @@ import { Clientes } from '../Modelo/clientes.modelo';
 })
 export class ServicioService {
 
-CLIENTES_URL="clientes";
+CLIENTES_URL="http://localhost:8080/clientes";
   constructor(private http:HttpClient) {   }
 
 getClienteList():Observable<any>{
 return this.http.get("http://localhost:8080/clientes");
 
 }
-save(clientes:Clientes){
-  return this.http.post("http://localhost:8080/clientes",clientes);
+GuardarClientes(clientes:Clientes):Observable<any>{
+  
+  return this.http.post("http://localhost:8080/clientes",clientes)
 }
+
+EliminarClientes(cedula:String):Observable<any>{
+  
+  return this.http.delete("http://localhost:8080/clientes?cedula="+cedula);
+}
+
 }

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'appfinal11';
+
   constructor(private router:Router){}
   
   Listar(){

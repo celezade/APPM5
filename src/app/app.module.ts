@@ -1,16 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListarComponent } from './Persona/listar/listar.component';
 import { NuevoComponent } from './Persona/nuevo/nuevo.component';
 import { ActualizarComponent } from './Persona/actualizar/actualizar.component';
-import { FooterComponent } from './Footer/footer/footer.component';
-
-
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './menu/menu.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -21,7 +19,6 @@ import { MenuComponent } from './menu/menu.component';
     ListarComponent,
     NuevoComponent,
     ActualizarComponent,
-    FooterComponent,
     MenuComponent
   
   
@@ -30,8 +27,9 @@ import { MenuComponent } from './menu/menu.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
    
     
   ],
